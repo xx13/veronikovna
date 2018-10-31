@@ -1,1 +1,1 @@
-Genius and so professional website made for my lovely wife.ź
+Genius and so professional website made for my lovely wife.
