@@ -1,6 +1,6 @@
 $dark_color: #26282F
 $font_family_alt: adonis-web, serif
-$font_family: "miller-display", miller-display, verdana, serif
+$font_family: 'Playfair Display', serif
 
 @each $heading, $size in (h1: 4rem, h2: 2.4rem, h3: 1.5rem, h4: 1.25rem , h5: 1rem, h6: 1 rem)
   #{$heading}
@@ -34,9 +34,7 @@ body
 .logo
   grid-column: span 4
   justify-self: center
-  overflow: hidden
   max-height: 80px
-  background-color: blue
   @media (min-width: 700px)
     grid-column: span 1
     justify-self: start
@@ -47,7 +45,6 @@ body
     fill: white
 
 .navigation
-  background-color: darkgreen
   justify-self: center
   align-self: start
   grid-column: span 4
@@ -64,7 +61,9 @@ body
     padding: 0
   a
     color: yellow
-    font-size: 1.2rem
+    font-size: 1rem
+    &:hover
+      color: red
 
 
 .hero
