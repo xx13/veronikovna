@@ -6,61 +6,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <title>Фотограф Вероника Губкина</title>
 </head>
-
+<!-- Need to fix font-->
 <body>
   <div class="container homepage_bg">
+
     <!-- Logo -->
     <div class="logo">
-      Veronikovna
+      <a href="#">
+        <svg class="logo_svg" aria-hidden="true" focusable="true">
+          <use xlink:href="./img/icons.svg#veronikovna"></use>
+        </svg>
+      </a>
     </div>
+
     <!-- Navigation -->
     <div class="navigation">
       <nav>
         <ul>
           <li><a href="#">Фото</a></li>
           <li><a href="#">Ответы</a></li>
-          <li><a href="#">На связи</a></li>
+          <li>
+            <a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="./img/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="./img/icons.svg#behance"></use>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="./img/icons.svg#vkontakte"></use>
+              </svg>
+            </a></li>
         </ul>
       </nav>
     </div>
+
     <!-- Hero -->
     <div class="hero">
       <h1>
-        [Горячий ноябрь полный прекрасный фотографий.]
+        Вероника Губкина
       </h1>
+      <h3>
+        Фотограф, ретушер, стилист
+      </h3>
+      <div class="offer">
+        Открыта запись на ноябрь! Посмотри примеры работ и ответы на вопросы
+      </div>
     </div>
 
-   <!-- Cards -->
-    <div class="card_main">
-      <p class="card_title">Персональные</p>
-      <p class="class_price">от 200 р.</p>
-    </div>
+    <!-- Cards -->
+    <a class="card" href="#">
+      <h4 class="card_title">Персональные</h4>
+      <h5 class="class_price">от 200 р.</h5>
+    </a>
 
-    <div class="card">
-      <p class="card_title">Семейные</p>
-      <p class="class_price">от 350 р.</p>
-    </div>
+    <a class="card" href="">
+      <h4 class="card_title">Семейные</h4>
+      <h5 class="class_price">от 350 р.</h5>
+    </a>
 
-    <div class="card">
-      <p class="card_title">Модельные тесты</p>
-      <p class="class_price">от 150 р.</p>
-    </div>
+    <a class="card" href="">
+      <h4 class="card_title">Лав стори</h4>
+      <h5 class="class_price">от 150 р.</h5>
+    </a>
 
-    <div class="card">
-      <p class="card_title">Коммерческие</p>
-      <p class="class_price">по согласованию</p>
-    </div>
+    <a class="card" href="">
+      <h4 class="card_title">Модельные тесты</h4>
+      <h5 class="class_price">от 150 р.</h5>
+    </a>
 
-    <div class="card">
-      <p class="card_title">Творческие</p>
-      <p class="class_price">плачу лично</p>
-    </div>
+    <a class="card" href="">
+      <h4 class="card_title">Коммерческие</h4>
+      <h5 class="class_price">от 600 р.</h5>
+    </a>
+
+    <a class="card" href="">
+      <h4 class="card_title">Творческие</h4>
+    </a>
 
   </div>
-
   <script src="./main.js"></script>
 </body>
 
