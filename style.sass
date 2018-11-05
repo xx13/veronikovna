@@ -1,44 +1,50 @@
 $dark_color: #26282F
 $font_family_alt: adonis-web, serif
-$font_family: miller-display, serif
+$font_family: "miller-display", miller-display, verdana, serif
 
-@each $heading, $size in (h1: 3rem, h2: 2rem, h3: 1.5rem, h4: 1.25rem , h5: 1rem, h6: 1 rem)
+@each $heading, $size in (h1: 4rem, h2: 2.4rem, h3: 1.5rem, h4: 1.25rem , h5: 1rem, h6: 1 rem)
   #{$heading}
       font-size: $size
       font-weight: 300
       color: #fff
       margin: 1rem 0 0 1rem
-      font-family: miller-display, serif
+      font-family: $font_family
 
 body
   color: white
   background-color: $dark_color
-  font-family: miller-display, serif
+  font-family: $font_family
 
 .container
   display: grid
   grid-template-columns: repeat(4, 1fr)
   grid-gap: .5rem .5rem
   padding: 1rem
-  background-image: url('./img/homepage_bg.jpeg')
+  max-width: 1400px
+  margin: 0 auto
+
+.homepage_bg
+  background-image: url('img/homepage_bg.jpeg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  max-width: 1400px
-  margin: 0 auto
+  width: 100%
+  height: 100%
 
 .logo
   grid-column: span 4
   justify-self: center
   overflow: hidden
+  max-height: 80px
+  background-color: blue
   @media (min-width: 700px)
     grid-column: span 1
     justify-self: start
+    align-self: center
   &_svg
-    width: 220px
-    height: 64px
+    width: 160px
+    height: 20px
     fill: white
-
 
 .navigation
   background-color: darkgreen
@@ -59,11 +65,17 @@ body
   a
     color: yellow
     font-size: 1.2rem
+
+
 .hero
   grid-column: span 4
-  min-height: 10rem
-  align-self: stretch
-  text-align: center
+  min-height: 50vh
+  background-color: navy
+  justify-self: stretch
+  align-items: end
+  &_content
+    text-align: center
+    background-color: green
   h3
     margin-bottom: 3rem
 
@@ -78,7 +90,7 @@ body
 
 .offer
   background-color: red
-  height: 10rem
+  height: 30vh
   margin-bottom: 3rem
   border-radius: .375rem
 
