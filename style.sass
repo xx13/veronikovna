@@ -1,0 +1,48 @@
+@each $heading, $size in (h1: 3rem, h2: 2rem, h3: 1.5rem, h4: 1.25rem , h5: 1rem, h6: 1 rem)
+  #{$heading}
+      font-size: $size
+      font-weight: 700
+      color: #34495E
+      font-family: 'Source Sans Pro', sans-serif
+
+$dark_color: #26282F
+
+body
+  color: white
+  background-color: $dark_color
+
+.container
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: 80px auto
+  grid-gap: 1rem 1rem
+  grid-auto-rows: minmax(100px, auto)
+  padding: 1rem
+  background-image: url('./img/homepage_bg.jpeg')
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+
+.logo
+  grid-column: 1
+
+.navigation
+  grid-column: 2/-1
+  background-color: darkgreen
+
+.hero
+  grid-column: 1/-1
+  grid-row: 2/3
+  background-color: pink
+  min-height: 10rem
+
+.card
+  min-height: 10rem
+  background-color: brown
+  grid-column: span(1)
+
+.card_main
+  grid-column: 1 / 3
+  grid-row: 3 / 5
+  background-color: green
