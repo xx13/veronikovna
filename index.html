@@ -17,8 +17,9 @@
       <!-- Logo -->
       <div class="logo">
         <a href="#">
+          <!-- BUG: svg use relative path issues -->
           <svg class="logo_svg" aria-hidden="true" focusable="true">
-            <use xlink:href="https://github.io/xx13/veronikovna/img/icons.svg#veronikovna"></use>
+            <use xlink:href="icons.svg#veronikovna"></use>
           </svg>
         </a>
       </div>
@@ -36,35 +37,49 @@
             <li>
               <a href="#">
                 <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="img/icons.svg#instagram"></use>
+                  <use xlink:href="icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="./img/icons.svg#behance"></use>
+                  <use xlink:href="icons.svg#behance"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="../img/icons.svg#vkontakte"></use>
+                  <use xlink:href="icons.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#">
                 <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="/img/icons.svg#mail"></use>
+                  <use xlink:href="icons.svg#mail"></use>
                 </svg>
               </a>
             </li>
+
           </ul>
         </nav>
       </div>
 
+
+<!-- navigation new
+<nav class="navigation">
+ <a href="#">Фото</a>
+ <a href="#">Ответы</a>
+ <a href="#">Ig</a>
+ <a href="#">Be</a>
+ <a href="#">Vk</a>
+ <a href="#">
+   <img class="icon" src="assets/email.svg" alt="email">
+ </a>
+</nav>
+-->
       <!-- Hero -->
       <div class="hero">
         <div class="hero_content">
