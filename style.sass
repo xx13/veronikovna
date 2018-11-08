@@ -5,15 +5,18 @@ $font_family: 'Playfair Display', serif
 @each $heading, $size in (h1: 4rem, h2: 2.4rem, h3: 1.5rem, h4: 1.25rem , h5: 1rem, h6: 1 rem)
   #{$heading}
       font-size: $size
+      line-height: 1.2
       font-weight: 300
       color: #fff
-      margin: 1rem 0 0 1rem
       font-family: $font_family
+      margin: 0
 
 body
   color: white
   background-color: $dark_color
   font-family: $font_family
+  font-size: 1rem
+  line-height: 1.5rem
 
 .container
   display: grid
@@ -22,6 +25,7 @@ body
   padding: 1rem
   max-width: 1400px
   margin: 0 auto
+
 
 .homepage_bg
   background-image: url('img/homepage_bg.jpeg')
@@ -66,8 +70,6 @@ body
       color: red
 
 
-
-
 .hero
   grid-column: span 4
   min-height: 50vh
@@ -89,6 +91,46 @@ body
   @media (min-width: 700px)
     grid-column: span 2
 
+.faq
+  grid-column: span 4
+  background-color: lightblue
+  border-radius: .375rem
+  padding: 1rem
+  @media (min-width: 700px)
+    grid-column: span 2
+  &_question
+    border-bottom: 1px solid grey
+    padding-bottom: 1rem
+  &_answer
+    color: black
+
+.shoot
+  &_photo
+    grid-column: span 4
+    background-color: yellow
+    margin-bottom: 3rem
+    text-align: center
+    @media (min-width: 700px)
+      grid-column: span 3
+    img
+      width: 100%
+      max-width: 691px
+    &_full
+      grid-column: span 4
+      margin-bottom: 3rem
+      img
+        width: 100%
+        max-width: 1400px
+  &_description
+    grid-column: span 4
+    align-self: center
+    @media (min-width: 700px)
+      grid-column: span 1
+  &_testimonial
+    background-color: green
+  &_team
+    background-color: blue
+
 .offer
   background-color: red
   height: 30vh
@@ -103,3 +145,18 @@ a
   height: 1.5rem
   vertical-align: center
   fill: currentColor
+
+.page_title
+  grid-column: span 4
+  margin-bottom: 1rem
+
+.o3
+  @media (max-width: 700px)
+    order: 3
+
+.o4
+  @media (max-width: 700px)
+    order: 2
+
+.o5
+  order: 5
