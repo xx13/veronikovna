@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.min.css">
-  <title>Персональные съемки &ampl; фотограф Вероника Губкина</title>
+  <link rel="stylesheet" href="aos.css">
+  <title>Персональные съемки - фотограф Вероника Губкина</title>
 </head>
 
 <body>
@@ -59,7 +60,6 @@
   </svg>
 
 
-  <div class="homepage_bg">
     <div class="container">
       <!-- Logo -->
       <div class="logo">
@@ -137,7 +137,7 @@
 
 
       <!-- Right Photo Block -->
-      <div class="shoot_description o3">
+      <div class="shoot_description o3" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <div class="shoot_testimonial">
           <h4>
             Двададада, я снимаю людей вне зависимости от их профессии. Большинство съемок, представленных у меня в портфолио, состоят из съемок людей, который не работают моделями&raquo;.
@@ -148,23 +148,23 @@
         </div>
       </div>
 
-      <div class="shoot_photo o4">
+      <div class="shoot_photo o4" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <img src="./img/photo_2.png" alt="Photo">
       </div>
 
 
       <!-- Full Width Photo Block -->
-      <div class="shoot_photo_full o5">
+      <div class="shoot_photo_full o5" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <img src="./img/photo_3.png" alt="Photo">
       </div>
 
       <!-- TODO: Remove it after test -->
 
       <!-- Left Photo Block -->
-      <div class="shoot_photo o6">
+      <div class="shoot_photo o6" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <img src="./img/photo_1.png" alt="Photo">
       </div>
-      <div class="shoot_description o7">
+      <div class="shoot_description o7" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <div class="shoot_testimonial">
           <h4>
             Cнимаю людей вне зависимости от их профессии. Большинство съемок, представленных у меня в портфолио, состоят из съемок людей, который не работают моделями&raquo;.
@@ -178,7 +178,7 @@
 
 
       <!-- Right Photo Block -->
-      <div class="shoot_description o8">
+      <div class="shoot_description o8" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <div class="shoot_testimonial">
           <h4>
             Двададада, я снимаю людей вне зависимости от их профессии. Большинство съемок, представленных у меня в портфолио, состоят из съемок людей, который не работают моделями&raquo;.
@@ -189,13 +189,13 @@
         </div>
       </div>
 
-      <div class="shoot_photo o9">
+      <div class="shoot_photo o9" data-aos="fade-up" data-aos-offset="240" data-aos-easing="ease-in-out">
         <img src="./img/photo_2.png" alt="Photo">
       </div>
 
 
       <!-- Full Width Photo Block -->
-      <div class="shoot_photo_full o10">
+      <div class="shoot_photo_full o10" data-aos="fade-up" data-aos-offset="240">
         <img src="./img/photo_3.png" alt="Photo">
       </div>
 
@@ -203,9 +203,15 @@
 
 
     </div>
-  </div>
+
 
   <script src="./main.js"></script>
+  <script src="./aos.js"></script>
+  <script>
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
 </body>
 
 </html>

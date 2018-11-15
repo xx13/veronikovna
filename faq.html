@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.min.css">
-  <title>Фотограф Вероника Губкина</title>
+  <link rel="stylesheet" href="aos.css">
+  <title>Ответы на вопросы – фотограф Вероника Губкина</title>
 </head>
 
 <body>
@@ -58,77 +59,96 @@
   </svg>
 
 
-  <div class="homepage_bg">
-    <div class="container">
+  <div class="container">
 
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <!-- BUG: svg use relative path issues -->
-          <svg class="logo_svg" aria-hidden="true" focusable="true">
-            <use xlink:href="#veronikovna"></use>
-          </svg>
-        </a>
-      </div>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <!-- BUG: svg use relative path issues -->
+        <svg class="logo_svg" aria-hidden="true" focusable="true">
+          <use xlink:href="#veronikovna"></use>
+        </svg>
+      </a>
+    </div>
 
-      <!-- Navigation -->
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Фото</a>
-            </li>
-            <li>
-              Ответы
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#behance"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#mail"></use>
-                </svg>
-              </a>
-            </li>
+    <!-- Navigation -->
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Фото</a>
+          </li>
+          <li>
+            Ответы
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="#behance"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon" aria-hidden="true" focusable="true">
+                <use xlink:href="#mail"></use>
+              </svg>
+            </a>
+          </li>
 
-          </ul>
-        </nav>
-      </div>
+        </ul>
+      </nav>
+    </div>
 
-      <!--  Page Title  -->
-      <h1 class="page_title">Ответы на частые вопросы</h1>
+    <!--  Page Title  -->
+    <h1 class="page_title">Ответы на частые вопросы</h1>
 
-      <!-- FAQ
 
-      <div class="faq">
+
+    <div class="faq_container">
+      <div class="faq_card gradient_style_1">
         <h4 class="faq_question">
-          Снимаешь ли ты только моделей?
+          Сколько фотографий ты отдаешь? Можно ли получить все исходники?
         </h4>
         <p class="faq_answer">
-          Нет, я снимаю людей вне зависимости от их профессии. Большинство съемок, представленных у меня в портфолио, состоят из съемок людей, который не работают моделями.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_2">
+        <h4 class="faq_question">
+          Кто входит в твою команду? Могут ли я взять своего парикмакхера/визажиста/стилиста?
+        </h4>
+        <p class="faq_answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
+        </p>
+      </div>
+
+      <div class="faq_card gradient_style_3">
+        <h4 class="faq_question">
+          За что отвечает стилист? Можно ли снимать без него?
+        </h4>
+        <p class="faq_answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Mollitia enim deleniti molestiae eveniet labore cumque.
+        </p>
+      </div>
+
+      <div class="faq_card gradient_style_4">
         <h4 class="faq_question">
           Что входит в стоимость?
         </h4>
@@ -137,7 +157,7 @@
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_5">
         <h4 class="faq_question">
           Как подготовиться к съемке?
         </h4>
@@ -146,7 +166,7 @@
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_6">
         <h4 class="faq_question">
           Можно ли оплатить картой?
         </h4>
@@ -156,133 +176,54 @@
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_1">
         <h4 class="faq_question">
-          За что отвечает стилист? Можно ли снимать без него?
+          Что входит в стоимость?
         </h4>
         <p class="faq_answer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi quidem eligendi aspernatur quisquam. Aliquam quo inventore, dolores voluptatibus sint.
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_2">
         <h4 class="faq_question">
-          Кто входит в твою команду? Могут ли я взять своего парикмакхера/визажиста/стилиста?
+          Как подготовиться к съемке?
         </h4>
         <p class="faq_answer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptatem sapiente soluta magni quos, ex officia facilis illum.
         </p>
       </div>
 
-      <div class="faq">
+      <div class="faq_card gradient_style_3">
         <h4 class="faq_question">
-          Сколько фотографий ты отдаешь? Можно ли получить все исходники?
+          Можно ли оплатить картой?
         </h4>
         <p class="faq_answer">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
         </p>
       </div>
--->
 
-      <div class="faq_container">
-        <div class="faq_card gradient_style_1">
-          <h4 class="faq_question">
-            Сколько фотографий ты отдаешь? Можно ли получить все исходники?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_2">
-          <h4 class="faq_question">
-            Кто входит в твою команду? Могут ли я взять своего парикмакхера/визажиста/стилиста?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_3">
-          <h4 class="faq_question">
-            За что отвечает стилист? Можно ли снимать без него?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia enim deleniti molestiae eveniet labore cumque.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_4">
-          <h4 class="faq_question">
-            Что входит в стоимость?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi quidem eligendi aspernatur quisquam. Aliquam quo inventore, dolores voluptatibus sint.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_5">
-          <h4 class="faq_question">
-            Как подготовиться к съемке?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptatem sapiente soluta magni quos, ex officia facilis illum.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_6">
-          <h4 class="faq_question">
-            Можно ли оплатить картой?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_1">
-          <h4 class="faq_question">
-            Что входит в стоимость?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus animi quidem eligendi aspernatur quisquam. Aliquam quo inventore, dolores voluptatibus sint.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_2">
-          <h4 class="faq_question">
-            Как подготовиться к съемке?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptatem sapiente soluta magni quos, ex officia facilis illum.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_3">
-          <h4 class="faq_question">
-            Можно ли оплатить картой?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Tempore possimus ab, officia, eveniet labore praesentium impedit quam architecto, corporis, ut sed assumenda tempora et.
-          </p>
-        </div>
-
-        <div class="faq_card gradient_style_2">
-          <h4 class="faq_question">
-            Как подготовиться к съемке?
-          </h4>
-          <p class="faq_answer">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptatem sapiente soluta magni quos, ex officia facilis illum.
-          </p>
-        </div>
-
+      <div class="faq_card gradient_style_2">
+        <h4 class="faq_question">
+          Как подготовиться к съемке?
+        </h4>
+        <p class="faq_answer">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad unde voluptatem sapiente soluta magni quos, ex officia facilis illum.
+        </p>
       </div>
 
     </div>
+
   </div>
 
   <script src="./main.js"></script>
+  <script src="./aos.js"></script>
+  <script>
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
 </body>
 
 </html>
