@@ -2,6 +2,8 @@ $dark_color: #26282F
 $secondary_color: #92979F
 $font_family_alt: adonis-web, serif
 $font_family: 'Playfair Display', serif
+$accent_color: #DFCE92
+$black_color: #2A2A31
 
 *
   box-sizing: border-box
@@ -19,13 +21,22 @@ $h-line-height: 1.1, 1.1, 1.4, 1.4, 1.6, 1.6
     padding: 0
     margin: 0
 
-body
+h1, h2
+  color: $accent_color
+
+h4
   color: white
-  background-color: $dark_color
+
+h3, h5, h6
+  color: white
+
+body
+  color: $black_color
+  background-color: #fafafa
   font-family: $font_family
   font-size: 1rem
   line-height: 1.5rem
-  background: linear-gradient(135deg, #1E2024, #414349, #1E2024)
+  background: linear-gradient(135deg, #EDEFF0, #fdfdfd)
   background-size: cover
   height: 100%
 
@@ -51,7 +62,9 @@ body
   &_svg
     width: 160px
     height: 20px
-    fill: white
+    fill: $black_color
+    &:hover
+      fill: $accent_color
 
 .navigation
   justify-self: center
@@ -65,7 +78,7 @@ body
     margin: 0 .5rem
     display: inline-block
     vertical-align: top
-    color: #fff
+    color: $black_color
     @media (min-width: 720px)
       margin: 0 1.5rem
   ul
@@ -74,7 +87,7 @@ body
     color: $secondary_color
     font-size: 1rem
     &:hover
-      color: #fff
+      color: $black_color
 
 .hero
   &_image
@@ -83,7 +96,7 @@ body
     @media (min-width: 720px)
       display: block
       // max-width: 400px
-      max-width: 480px
+      max-width: 420px
       margin-bottom: 3rem
       align-self: center
       justify-self: center
@@ -140,45 +153,45 @@ body
 // TODO: Background-size: cover, keep it dry.
 
 .card_personal
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/personal.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/personal.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/personal.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/personal.png') center center no-repeat
     background-size: cover
 
 .card_family
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/family.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/family.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/family.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/family.png') center center no-repeat
     background-size: cover
 
 .card_pregnant
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/pregnant.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/pregnant.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/pregnant.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/pregnant.png') center center no-repeat
     background-size: cover
 
 .card_tests
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/tests.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/tests.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/tests.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/tests.png') center center no-repeat
     background-size: cover
 
 .card_beauty
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/beauty.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/beauty.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/beauty.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/beauty.png') center center no-repeat
     background-size: cover
 
 .card_editorial
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./img/editorials.png') center center no-repeat
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/editorials.png') center center no-repeat
   background-size: cover
   &:hover
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .3)), url('./img/editorials.png') center center no-repeat
+    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/editorials.png') center center no-repeat
     background-size: cover
 
 .faq
@@ -205,6 +218,7 @@ body
   &_question
     border-bottom: 1px solid rgba(255, 255, 255, .2)
     padding-bottom: 1rem
+    color: white
   &_answer
     padding: 1rem 0 1rem
     color: black
@@ -230,11 +244,10 @@ body
     grid-column: span 4
     align-self: center
     padding-left: 1rem
-    background-image: url('./img/quotes.svg')
-    // TODO: change png to svg
-    background-position: 0 0
-    background-repeat: no-repeat
-    background-size: 36px 36px
+    // background-image: url('./img/quotes.svg')
+    // background-position: 0 0
+    // background-repeat: no-repeat
+    // background-size: 36px 36px
     padding-top: .5rem
     margin-bottom: 5rem
     @media (min-width: 900px)
@@ -243,6 +256,7 @@ body
   &_testimonial
     h4
       margin-bottom: 1rem
+      color: $black_color
   &_team
   &_divider
     height: 1rem
@@ -311,7 +325,7 @@ a
 
 
 .text-secondary
-  color: $secondary_color
+  color: $accent_color
 
 .gradient_style_1
   background: #12c2e9;  /* fallback for old browsers */
