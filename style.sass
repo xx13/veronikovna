@@ -2,7 +2,7 @@ $dark_color: #26282F
 $secondary_color: #92979F
 $font_family_alt: adonis-web, serif
 $font_family: 'Playfair Display', serif
-$accent_color: #DFCE92
+$accent_color: #AF9844
 $black_color: #2A2A31
 
 *
@@ -88,6 +88,8 @@ body
     font-size: 1rem
     &:hover
       color: $black_color
+  &_label
+    margin-left: 300px
 
 .hero
   &_image
@@ -113,6 +115,7 @@ body
     h4
       margin-bottom: 2rem
       text-align: center
+      color: $black_color
   &_offer
     text-align: center
     align-self: center
@@ -139,6 +142,9 @@ body
       // color: orange
     p
       // color: white
+
+.faq_preview
+  grid-column: 2 / 4
 
 .card
   grid-column: span 4
@@ -269,8 +275,6 @@ body
     grid-column: span 4
 
 
-a
-  text-decoration: none
 
 .icon
   width: 1.5rem
@@ -278,10 +282,28 @@ a
   vertical-align: center
   fill: currentColor
 
-.page_title
-  grid-column: span 4
-  margin-bottom: 3rem
-  text-align: center
+.page
+  &_title
+    grid-column: span 4
+    margin-bottom: 3rem
+    text-align: center
+  &_description
+    grid-column: span 4
+    font-size: 1.125rem
+    line-height: 1.5
+    padding: 0 2rem
+    margin-bottom: 4rem
+    color: grey
+    @media (min-width: 600px)
+      padding: 0 5rem
+    a
+      display: inline-block
+      text-decoration: underline
+      color: $accent_color
+      &:hover
+        color: lighten($accent_color, 15%)
+  &_links a
+    margin: 0 .5rem
 
 // TODO: Can I fix order issues without army of extra classes?
 
@@ -323,6 +345,9 @@ a
 .o10
   order: 10
 
+
+.center
+  text-align: center
 
 .text-secondary
   color: $accent_color
