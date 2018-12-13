@@ -14,6 +14,129 @@
 
 <body>
 
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <!-- TODO (optional): svg use relative path issues -->
+          <svg class="logo_svg" aria-hidden="true" focusable="true">
+            <use xlink:href="#veronikovna"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Navigation  -->
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Фото</a>
+            </li>
+            <li>
+              <a href="faq.html">Частые вопросы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="social">
+        <ul>
+        <li>
+          Запись на съёмки:
+        </li>
+        <li>
+          <a href="#">
+            <svg class="icon" aria-hidden="true" focusable="true">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="icon" aria-hidden="true" focusable="true">
+              <use xlink:href="#behance"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="icon" aria-hidden="true" focusable="true">
+              <use xlink:href="#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="icon" aria-hidden="true" focusable="true">
+              <use xlink:href="#mail"></use>
+            </svg>
+          </a>
+        </li>
+        </ul>
+      </div>
+
+      <!--  Page Title  -->
+      <!-- TODO: Make sure H1 fit mobile screens -->
+      <h1 class="page_title">Модельные тесты</h1>
+      <div class="page_description">
+        <b>От 200 рублей.</b><br>
+        Съемка проходит 2 часа в студии, вы получаете 8 обработанных фотографий. В съемках кроме меня участвует визажист.
+        В команде есть стилист и парикмахер, чтобы получить от съемки экстра результат.        Дополнительные обработанные кадры, специальные образы, особые локации и т.д. — обсуждаются отдельно.
+      </div>
+
+
+      <!-- Right Photo Block -->
+      <div class="shoot_description" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
+        <div class="shoot_testimonial">
+          <h4>
+            Мне очень нравится снимать тесты. Особенно, когда карточки попадают на обложку, а модель получает хорошие контракты.
+          </h4>
+          <p class="text-secondary">
+           Вероника Губкина
+          </p>
+        </div>
+      </div>
+
+      <div class="shoot_photo" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
+        <img src="./img/test_collection_01.png" alt="Модельные тесты, подборка первая">
+      </div>
+
+
+      <!-- Full Width Photo Block -->
+      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
+        <img src="./img/test_collection_02.png" alt="Модельные тесты, Подборка вторая">
+      </div>
+
+      <!-- Full Width Photo Block -->
+      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
+        <img src="./img/test_collection_03.png" alt="Модельные тесты, Подборка третяя">
+      </div>
+
+      <!-- Full Width Photo Block -->
+      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
+        <img src="./img/test_collection_04.png" alt="Модельные тесты, Подборка четвертая">
+      </div>
+
+      <!-- Links -->
+      <div class="page_description center navigation_bottom">
+        <a href="personal.html">Персональные</a>
+        <a href="family.html">Семейные</a>
+        <a href="pregnant.html">Беременные</a>
+        <a href="beauty.html">Бьюти</a>
+        <a href="editorials.html">Публикации</a>
+      </div>
+
+    </div>
+
+
+  <script src="./main.js"></script>
+  <script src="./aos.js"></script>
+  <script>
+    AOS.init({
+      disable: 'mobile'
+    });
+  </script>
+
   <!-- svg  -->
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
     <symbol id="instagram" viewBox="0 0 24 24">
@@ -60,121 +183,6 @@
   </svg>
 
 
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <!-- TODO (optional): svg use relative path issues -->
-          <svg class="logo_svg" aria-hidden="true" focusable="true">
-            <use xlink:href="#veronikovna"></use>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Navigation -->
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Фото</a>
-            </li>
-            <li>
-              <a href="faq.html">Ответы</a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#behance"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" aria-hidden="true" focusable="true">
-                  <use xlink:href="#mail"></use>
-                </svg>
-              </a>
-            </li>
-
-          </ul>
-        </nav>
-      </div>
-
-      <!--  Page Title  -->
-      <!-- TODO: Make sure H1 fit mobile screens -->
-      <h1 class="page_title">Модельные тесты</h1>
-      <div class="page_description">
-        <b>От 200 рублей.</b><br>
-        Съемка проходит 2 часа в студии, вы получаете 8 обработанных фотографий. В съемках кроме меня участвует визажист.
-        В команде есть стилист и парикмахер, чтобы получить от съемки экстра результат.        Дополнительные обработанные кадры, специальные образы, особые локации и т.д. — обсуждаются отдельно.
-      </div>
-
-
-      <!-- Right Photo Block -->
-      <div class="shoot_description" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
-        <div class="shoot_testimonial">
-          <h4>
-            Мне очень нравится снимать тесты. Особенно, когда карточки попадают на обложку, а модель получает хорошие контракты.
-          </h4>
-          <p class="text-secondary">
-           Вероника Губкина
-          </p>
-        </div>
-      </div>
-
-      <div class="shoot_photo" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
-        <img src="./img/test_collection_01.png" alt="Модельные тесты, подборка первая">
-      </div>
-
-
-      <!-- Full Width Photo Block -->
-      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
-        <img src="./img/test_collection_02.png" alt="Модельные тесты, Подборка вторая">
-      </div>
-
-      <!-- Full Width Photo Block -->
-      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
-        <img src="./img/test_collection_03.png" alt="Модельные тесты, Подборка третяя">
-      </div>
-
-      <!-- Full Width Photo Block -->
-      <div class="shoot_photo_full" data-aos="fade-up" data-aos-offset="160" data-aos-easing="ease-in-out">
-        <img src="./img/test_collection_04.png" alt="Модельные тесты, Подборка четвертая">
-      </div>
-
-      <!-- Links -->
-      <div class="page_description center">
-        <a href="personal.html">Персональные</a>
-        <a href="family.html">Семейные</a>
-        <a href="pregnant.html">Беременные</a>
-        <a href="beauty.html">Бьюти</a>
-        <a href="editorials.html">Публикации</a>
-      </div>
-
-    </div>
-
-
-  <script src="./main.js"></script>
-  <script src="./aos.js"></script>
-  <script>
-    AOS.init({
-      disable: 'mobile'
-    });
-  </script>
 </body>
 
 </html>

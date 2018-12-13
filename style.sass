@@ -20,6 +20,9 @@ $h-line-height: 1.1, 1.1, 1.4, 1.4, 1.6, 1.6
     font-weight: 400
     padding: 0
     margin: 0
+h1
+  @media (max-width:640px)
+    font-size: 2.8rem
 
 h1, h2
   color: $accent_color
@@ -36,7 +39,6 @@ body
   font-family: $font_family
   font-size: 1rem
   line-height: 1.5rem
-  background: linear-gradient(135deg, #EDEFF0, #fdfdfd)
   background-size: cover
   height: 100%
 
@@ -53,7 +55,7 @@ body
   justify-self: center
   max-height: 80px
   margin-top: 1rem
-  @media (min-width: 720px)
+  @media (min-width: 800px)
     margin-top: 0
     grid-column: span 1
     justify-self: start
@@ -66,82 +68,81 @@ body
     &:hover
       fill: $accent_color
 
-.navigation
+
+%top_menu
   justify-self: center
   grid-column: span 4
-  margin: 1.4rem 0
-  @media (min-width: 720px)
-    grid-column: span 3
+  margin: 1rem 0 1rem
+  @media (min-width: 800px)
+    grid-column: span 1
     justify-self: end
-    margin: .4rem 0 2rem
+    margin-top: .4rem
   ul li
-    margin: 0 .5rem
+    margin: 0 .2rem
     display: inline-block
     vertical-align: top
     color: $black_color
-    @media (min-width: 720px)
-      margin: 0 1.5rem
+    @media (min-width: 1100px)
+      margin: 0 1rem
   ul
     padding: 0
   a
     color: $secondary_color
     font-size: 1rem
     &:hover
-      color: $black_color
+      color: $accent_color
   &_label
     margin-left: 300px
 
-.hero
-  &_image
+
+.navigation
+  @extend %top_menu
+
+.social
+  @extend %top_menu
+  margin-top: 0
+  @media (min-width: 800px)
     grid-column: span 2
-    display: none
-    @media (min-width: 720px)
-      display: block
-      // max-width: 400px
-      max-width: 420px
-      margin-bottom: 3rem
-      align-self: center
-      justify-self: center
-    img
-      width: 100%
-  &_content
+    margin-top: .4rem
+    justify-self: end
+
+
+.hero
+  grid-column: span 4
+  height: auto
+  background: linear-gradient(rgba(81, 100, 106, 0.8), rgba(81, 100, 106, 0.8)), url('./img/hero.jpg') top left no-repeat
+  background-size: cover
+  justify-content: center
+  display: flex
+  border-radius: .375rem
+  @media (min-width: 950px)
     grid-column: span 4
-    align-self: center
-    @media (min-width: 720px)
-      grid-column: span 2
-    h1
-      margin-bottom: 1.5rem
-      text-align: center
-    h4
-      margin-bottom: 2rem
-      text-align: center
-      color: $black_color
-  &_offer
+    min-height: 40vh
+    background: #92A8A9 url('./img/hero.jpg') top left no-repeat
+    background-size: cover
+    justify-content: flex-end
+  &_content
+    width: 90%
     text-align: center
+    padding: 0 .5rem 3rem
     align-self: center
-    margin: 0 auto
-    width: 339px
-    height: 419px
-    background: url('./img/promo_mobile.png') center right no-repeat
-    background-size: contain
-    padding: 6rem 4rem 0
-    color: orange
-    vertical-align: middle
-    @media (min-width: 720px)
-      background: url('./img/promo_mobile.png') center right no-repeat
-      background-size: contain
-      padding: 6rem 4rem 0
-    @media (min-width: 1050px)
-      width: 605px
-      height: 258px
-      vertical-align: middle
-      padding: 4rem 6rem 0
-      background: url('./img/promo.png') center center no-repeat
+    @media (min-width: 950px)
+      width: 60%
+      padding: 0 .5rem 1.5rem
+    h1
+      margin: 2rem 0 1.5rem
+      color: white
     h3
-      margin-bottom: 2rem
-      // color: orange
-    p
-      // color: white
+      padding: 0 2rem
+      color: #B8F0EC
+      @media (min-width: 950px)
+        padding: 0 6rem
+  img
+    width: 100%
+    margin: 2rem 0 1.5rem
+    @media (min-width: 650px)
+      width: 60%
+
 
 .faq_preview
   grid-column: 2 / 4
@@ -153,52 +154,20 @@ body
   border-radius: .375rem
   padding: 1rem
   color: #fff
+  text-decoration: none
   @media (min-width: 720px)
     grid-column: span 2
 
-// TODO: Background-size: cover, keep it dry.
 
-.card_personal
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/personal.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/personal.png') center center no-repeat
-    background-size: cover
+$cards: 'personal', 'family', 'pregnant', 'beauty', 'editorials', 'tests'
 
-.card_family
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/family.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/family.png') center center no-repeat
+@each $item in $cards
+  .card_#{$item}
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/#{$item}.png') center center no-repeat
     background-size: cover
-
-.card_pregnant
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/pregnant.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/pregnant.png') center center no-repeat
-    background-size: cover
-
-.card_tests
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/tests.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/tests.png') center center no-repeat
-    background-size: cover
-
-.card_beauty
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/beauty.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/beauty.png') center center no-repeat
-    background-size: cover
-
-.card_editorial
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('./img/editorials.png') center center no-repeat
-  background-size: cover
-  &:hover
-    background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/editorials.png') center center no-repeat
-    background-size: cover
+    &:hover
+      background: linear-gradient(rgba(215, 215, 195, .2), rgba(215, 215, 195, .2)), url('./img/#{$item}.png') center center no-repeat
+      background-size: cover
 
 .faq
   &_container
@@ -250,11 +219,6 @@ body
     grid-column: span 4
     align-self: center
     padding-left: 1rem
-    // background-image: url('./img/quotes.svg')
-    // background-position: 0 0
-    // background-repeat: no-repeat
-    // background-size: 36px 36px
-    padding-top: .5rem
     margin-bottom: 5rem
     @media (min-width: 900px)
       grid-column: span 1
@@ -274,8 +238,6 @@ body
     margin: 5rem 0
     grid-column: span 4
 
-
-
 .icon
   width: 1.5rem
   height: 1.5rem
@@ -285,14 +247,14 @@ body
 .page
   &_title
     grid-column: span 4
-    margin-bottom: 3rem
+    margin-bottom: 1.5rem
     text-align: center
   &_description
     grid-column: span 4
     font-size: 1.125rem
     line-height: 1.5
     padding: 0 2rem
-    margin-bottom: 4rem
+    margin-bottom: 3rem
     color: grey
     @media (min-width: 600px)
       padding: 0 5rem
@@ -302,8 +264,9 @@ body
       color: $accent_color
       &:hover
         color: lighten($accent_color, 15%)
-  &_links a
-    margin: 0 .5rem
+
+.navigation_bottom a
+    margin: 0 1rem
 
 // TODO: Can I fix order issues without army of extra classes?
 
@@ -350,7 +313,10 @@ body
   text-align: center
 
 .text-secondary
-  color: $accent_color
+  color: $secondary_color
+
+.mt2
+  margin-top: 2rem
 
 .gradient_style_1
   background: #12c2e9;  /* fallback for old browsers */
@@ -367,17 +333,17 @@ body
   background: -webkit-linear-gradient(45deg, #38ef7d, #11998e)  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(45deg, #38ef7d, #11998e) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.gradient_style_4
+.gradient_style_5
   background: #56CCF2 /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2F80ED, #56CCF2) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.gradient_style_5
-  background: #4776E6 /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6) /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8E54E9, #4776E6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// .gradient_style_4
+//   background: #4776E6 /* fallback for old browsers */
+//   background: -webkit-linear-gradient(to right, #8E54E9, #4776E6) /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #8E54E9, #4776E6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.gradient_style_6
+.gradient_style_4
   background: #FF416C /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C) /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FF4B2B, #FF416C) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
